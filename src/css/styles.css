@@ -70,7 +70,7 @@
 
 .gallery-image {
   width: 360px;
-  height: 200px;
+  height: 152px;
   transition: transform 0.3s ease, border 0.3s ease;
   object-fit: cover;
 }
@@ -89,12 +89,14 @@
 .card-overlay {
   bottom: 0;
   width: 358px;
-  height: 80px;
+  height: 48px;
   background: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 1px solid #000000;
+  margin-top: -4px;
+  border-top: 0;
 }
 
 /* Parameter Box */
@@ -109,13 +111,20 @@
 
 /* Headline */
 .param-title {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
 }
 
 /* Value */
 .param-value {
+  font-family: Montserrat;
   font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 4%;
 }
 
 /* loader */
@@ -159,4 +168,18 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.custom-iziToast {
+  min-height: 88px !important;
+  font-size: 16px !important;
+  margin-right: 36px !important;
+}
+
+.iziToast-message {
+  font-family: Montserrat !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  letter-spacing: 0.5px !important;
 }
