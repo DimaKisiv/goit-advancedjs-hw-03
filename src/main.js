@@ -21,23 +21,28 @@ document.addEventListener('DOMContentLoaded', () => {
         if (data.hits.length) {
           drawGallery(data.hits);
         } else {
-          iziToast.error({
-            message:
-              'Sorry, there are no images matching your search query. Please try again!',
-            close: true,
-            position: 'topRight',
-            backgroundColor: '#EF4040',
-            messageColor: '#FAFAFB',
-            maxWidth: '432px',
-            class: 'custom-iziToast',
-          });
+          iziToastError(
+            'Sorry, there are no images matching your search query. Please try again!'
+          );
         }
       })
       .catch(error => {
-        console.error('Error fetching images:', error);
+        iziToastError('Error fetching images:', error);
       })
       .finally(() => {
         document.querySelector('.loader').style.display = 'none';
       });
   });
 });
+
+function iziToastError(erroMessage) {
+  iziToast.error({
+    message: erroMessage,
+    close: true,
+    position: 'topRight',
+    backgroundColor: '#EF4040',
+    messageColor: '#FAFAFB',
+    maxWidth: '432px',
+    class: 'custom-iziToast',
+  });
+}
