@@ -4,7 +4,7 @@ import { clearGallery, drawGallery } from './js/render-functions';
 import { getPhotos } from './js/pixabay-api';
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.search-form').addEventListener('submit', event => {
+  document.querySelector('form.form').addEventListener('submit', event => {
     event.preventDefault();
     const searchText = event.target.querySelector('input').value;
     if (searchText.length == 0) return;
