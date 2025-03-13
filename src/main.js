@@ -25,11 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
             message:
               'Sorry, there are no images matching your search query. Please try again!',
             close: true,
-            position: "topRight",
-            backgroundColor: "#EF4040",
-            messageColor: "#FFFFFF",
-            maxWidth:"432px",
-            class: 'custom-iziToast'
+            position: 'topRight',
+            backgroundColor: '#EF4040',
+            messageColor: '#FAFAFB',
+            maxWidth: '432px',
+            class: 'custom-iziToast',
+            iconUrl: './img/toast-error.svg',
           });
         }
       })

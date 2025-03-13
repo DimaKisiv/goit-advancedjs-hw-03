@@ -17,8 +17,8 @@ export function drawGallery(images) {
 }
 
 export function clearGallery() {
-    const gallery = document.querySelector('.gallery');
-    gallery.innerHTML = '';
+  const gallery = document.querySelector('.gallery');
+  gallery.innerHTML = '';
 }
 
 function galleryItemTemplate(item) {
