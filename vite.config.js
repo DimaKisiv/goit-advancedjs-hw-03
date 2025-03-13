@@ -38,7 +38,6 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
       emptyOutDir: true,
     },
-    publicDir: 'img',
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),

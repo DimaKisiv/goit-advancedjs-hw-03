@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             messageColor: '#FAFAFB',
             maxWidth: '432px',
             class: 'custom-iziToast',
-            iconUrl: '/img/toast-error.svg',
           });
         }
       })

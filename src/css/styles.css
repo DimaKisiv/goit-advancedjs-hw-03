@@ -183,9 +183,3 @@
   line-height: 24px !important;
   letter-spacing: 0.5px !important;
 }
-
-.iziToast > .iziToast-close {
-  background: url('/img/toast-close.svg') no-repeat center center !important;
-  background-size: contain !important;
-  background-size: 12px 12px !important;
-}
