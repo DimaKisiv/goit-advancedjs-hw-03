@@ -16,6 +16,9 @@ jobs:
           npm install
           npm run build
 
+      - name: Copy img Folder 📁
+        run: cp -r img dist/ || echo "No img folder found"
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
