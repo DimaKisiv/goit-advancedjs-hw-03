@@ -67,7 +67,9 @@
   align-items: center;
   gap: 24px;
 }
-
+.gallery-item {
+  border-color: #808080;
+}
 .gallery-image {
   width: 360px;
   height: 152px;
@@ -184,6 +186,10 @@
   letter-spacing: 0.5px !important;
 }
 
-.iziToast-close {
+.iziToast>.iziToast-close {
   filter: invert(1);
+}
+
+.iziToast-error .iziToast-icon {
+  filter: brightness(0) invert(1); 
 }
