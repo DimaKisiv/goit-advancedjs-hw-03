@@ -183,3 +183,7 @@
   line-height: 24px !important;
   letter-spacing: 0.5px !important;
 }
+
+.iziToast-close {
+  filter: invert(1);
+}
